@@ -51,7 +51,6 @@ Nhập tên đăng nhập, email (có thể để trống) và mật khẩu. M�
 2. Đăng nhập bằng tài khoản vừa tạo.
 3. Thấy trang **Projects** là xong.
 
-Gửi coach (qua LMS) **ảnh chụp trang đăng nhập hoặc trang Projects trống**. Đây là ảnh duy nhất bạn chụp trong cả lab; sau khi có ảnh cabin thì không chụp màn hình nữa (RULES §2).
 
 ## 5. Bật / tắt
 

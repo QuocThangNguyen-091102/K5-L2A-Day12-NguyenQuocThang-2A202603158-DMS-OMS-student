@@ -1,0 +1,39 @@
+File: K5-L2-DAY12-NguyenQuocThang-2A202603158-DMSOMS/export_final_v2.zip
+Ảnh: 22 · đã có frame_meta: 22 · số đối tượng: child_seat=14, face=7, face13=5, hand=10, infant_seat=10, object=8, person=10
+Kết quả: 0 lỗi, 0 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+
+--- Ghi chú bản v2 (sau review với người gán thứ hai, xem disagreement_log.csv) ---
+Thay đổi so với export_final.zip (đúng 4 điểm, diff v1↔v2 xác nhận):
+  1. D06 hand side=left: box [335,270,540,600] -> [440,250,708,600] (box cũ lệch, thiếu nửa bàn tay; 4.4-5)
+  2. D06 hand side=right: ytl 80 -> 50 để gồm đầu ngón (4.4-5)
+  3. D02 face13.nose_tip: occluded -> visible (mũi không bị che; 4.6)
+  4. D05 face13.nose_tip: occluded -> visible, (985,500) -> (988,492) (thấy đốm sáng chóp mũi; 4.6)
+Các dòng còn lại trong disagreement_log giữ nguyên nhãn (mine) hoặc là ca mơ hồ đã hỏi coach (ambiguous).
+--- Ghi chú chung (giữ nguyên từ check_final.txt) của người gán (Nguyễn Quốc Thắng · G01) ---
+Cảnh báo còn lại: không có (0 lỗi, 0 cảnh báo).
+
+Ghế trống (không vẽ box, GUIDE 4.2/4.8), giống nhau ở _rgb và _ir:
+  S01: 1 (rear_middle) · S02: 1 (rear_middle) · S03: 0 · S04: 1 (rear_left)
+  S05: 1 (rear_middle) · S06: 0 · S07: 2 (rear_right, rear_left) · S08: 0
+  (mở rộng) S09: 2 (rear_middle, rear_left) · S10: 2 (rear_middle, rear_left)
+
+Ca khó / báo coach:
+  1. Có trẻ em hoặc em bé ngồi trong ghế, dù GUIDE §3 nói "không có trẻ em ngồi":
+     S02 rear_right (em bé trong infant_seat), S03 rear_left (trẻ trong child_seat),
+     S05 rear_right + rear_left (2 trẻ trong child_seat), S07 rear_middle (em bé), S08 rear_right (em bé).
+     Cách gán: box ghế, KHÔNG vẽ box cho trẻ; child_seat.occupied=unknown (RULES §4, schema không có yes).
+  2. infant_seat.facing của ghế trống (S01 rear_right, S06 rear_left): gán rear vì cùng mẫu vỏ và
+     cách đặt như ghế ở S02 (thấy em bé quay mặt về lưng ghế); S07, S08 thấy em bé quay mặt về camera nên ghi front.
+  3. Không vẽ face:
+     - S04 (rear_middle): tóc che gần hết mặt, không thấy mũi, mắt chỉ lộ một mép (GUIDE 4.5).
+     - D01: mặt quay đi, tay áo che, ảnh tối do ánh sáng NIR giảm theo khoảng cách; thấy gọng kính nhưng
+       không phân biệt được mắt hay mũi (GUIDE 4.5). Ca mơ hồ: người gán thứ hai cho là thấy mũi.
+  4. D05: tay phải sát mặt cầm vật tối; chỉ thấy một dải tối thẳng có 2 đốm sáng, không chắc là cạnh điện thoại
+     -> không vẽ phone (GUIDE 4.7, RUBRIC "không vẽ phone khi không thấy rõ vật"). Ca mơ hồ, xin coach xác nhận.
+  5. D03: dây an toàn đang được thắt hoặc chỉnh (hai tay ở đúng chỗ dây) -> seatbelt=unknown (GUIDE 4.7).
+  6. D01: không thấy bàn tay nào (cả hai nằm trong hoặc sau áo khoác) -> không có box hand.
+  7. gaze_zone=other ở mọi D## có mặt: D02 ngửa đầu uống nước; D03 cúi đầu nhìn tay ở ngực;
+     D04 ngửa và quay đầu sang phải, không thấy mắt; D05 không thấy mắt (phản xạ trên tròng);
+     D06 mắt phải nhắm. Không có vùng nào trong danh sách chắc chắn.
+  8. Trên ảnh D## (xoay 90°), trái/phải đã kiểm bằng trục y: left_eye_* có y lớn hơn right_eye_*,
+     nên script không báo cảnh báo "left_eye_outer bên trái ảnh".

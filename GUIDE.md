@@ -107,7 +107,7 @@ Chỉ gán những label bảng 4.1 ghi cho phần đó, không gán thêm loạ
 3. **Ghế gọi theo xe**, như người ngồi trong xe nhìn về phía trước. Camera OMS nhìn về phía sau, nên trái ảnh là phải của xe.
 4. **Đừng đoán bằng màu trên ảnh IR.** Ảnh IR chỉ có độ sáng, nên nhận vật bằng hình dạng, vị trí, ngữ cảnh. Ảnh quá tối thì chỉnh brightness/contrast hiển thị trên CVAT (không sửa file ảnh), và không đoán.
 5. **Hộp sát mép**, ôm đủ phần thấy được. Hộp lỏng hay lệch là lỗi.
-6. **Ảnh ở yên trong dự án.** Không chụp màn hình gửi chat, không tải ra ngoài. Hỏi ca khó bằng tên ảnh, ví dụ "G03 D04".
+
 
 ### 4.5 Mặt, mắt, vùng nhìn
 

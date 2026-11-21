@@ -1,0 +1,48 @@
+﻿image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.5 / 4.6,"Giữ không vẽ face/face13: ""mũi"" peer đánh dấu trùng đầu ống tay áo, mắt sau tròng không thấy (4.5). Hỏi coach"
+D01.png,face13,count,khác số skeleton,0,1,ambiguous,4.5 / 4.6,"Giữ không vẽ face/face13: ""mũi"" peer đánh dấu trùng đầu ống tay áo, mắt sau tròng không thấy (4.5). Hỏi coach"
+D02.png,face13,nose_tip.occluded,khác cờ,1,0,peer,4.6,Sửa nose_tip D02 thành visible: mũi không bị vật che (occluded chỉ dùng khi bị che)
+D03.png,person,seatbelt,khác giá trị (IoU=0.73),unknown,worn_correct,mine,4.7,"Giữ unknown: hai tay đang cầm/kéo dây ngay chỗ khóa, đoạn vai→hông bị che (đang thắt dở)"
+D03.png,face,gaze_zone,khác giá trị (IoU=0.74),other,lap,mine,4.5,"Giữ other: đầu cúi nhìn tay ở ngực, không phải đùi; không thấy mắt nên không chắc vùng nhìn"
+D03.png,face13,left_eye_outer.occluded,khác cờ,0,1,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,left_eye_outer.outside,khác cờ,1,0,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,left_eye_inner.occluded,khác cờ,0,1,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,left_eye_inner.outside,khác cờ,1,0,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,left_eye_upper.occluded,khác cờ,0,1,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,left_eye_upper.outside,khác cờ,1,0,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,left_eye_lower.occluded,khác cờ,0,1,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,left_eye_lower.outside,khác cờ,1,0,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,mouth_left.occluded,khác cờ,0,1,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,mouth_left.outside,khác cờ,1,0,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,mouth_right.occluded,khác cờ,0,1,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,mouth_right.outside,khác cờ,1,0,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,lip_upper.occluded,khác cờ,0,1,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,lip_upper.outside,khác cờ,1,0,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,lip_lower.occluded,khác cờ,0,1,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D03.png,face13,lip_lower.outside,khác cờ,1,0,mine,4.6,"Giữ outside: mắt trái và miệng khuất hẳn do cúi đầu; peer ước lượng theo tỉ lệ mặt = đặt điểm ""cho đủ"""
+D04.png,face13,right_eye_outer.occluded,khác cờ,0,1,mine,4.6 / 4.4-2,"Giữ outside: mắt phải khuất sau sống mũi (mặt nghiêng). Peer đặt right_eye_outer lên đốm sáng cố định của đèn phát (1140,300) có ở mọi khung → cảnh báo trái/phải ở bản peer"
+D04.png,face13,right_eye_outer.outside,khác cờ,1,0,mine,4.6 / 4.4-2,"Giữ outside: mắt phải khuất sau sống mũi (mặt nghiêng). Peer đặt right_eye_outer lên đốm sáng cố định của đèn phát (1140,300) có ở mọi khung → cảnh báo trái/phải ở bản peer"
+D04.png,face13,right_eye_inner.occluded,khác cờ,0,1,mine,4.6 / 4.4-2,"Giữ outside: mắt phải khuất sau sống mũi (mặt nghiêng). Peer đặt right_eye_outer lên đốm sáng cố định của đèn phát (1140,300) có ở mọi khung → cảnh báo trái/phải ở bản peer"
+D04.png,face13,right_eye_inner.outside,khác cờ,1,0,mine,4.6 / 4.4-2,"Giữ outside: mắt phải khuất sau sống mũi (mặt nghiêng). Peer đặt right_eye_outer lên đốm sáng cố định của đèn phát (1140,300) có ở mọi khung → cảnh báo trái/phải ở bản peer"
+D04.png,face13,right_eye_upper.occluded,khác cờ,0,1,mine,4.6 / 4.4-2,"Giữ outside: mắt phải khuất sau sống mũi (mặt nghiêng). Peer đặt right_eye_outer lên đốm sáng cố định của đèn phát (1140,300) có ở mọi khung → cảnh báo trái/phải ở bản peer"
+D04.png,face13,right_eye_upper.outside,khác cờ,1,0,mine,4.6 / 4.4-2,"Giữ outside: mắt phải khuất sau sống mũi (mặt nghiêng). Peer đặt right_eye_outer lên đốm sáng cố định của đèn phát (1140,300) có ở mọi khung → cảnh báo trái/phải ở bản peer"
+D04.png,face13,right_eye_lower.occluded,khác cờ,0,1,mine,4.6 / 4.4-2,"Giữ outside: mắt phải khuất sau sống mũi (mặt nghiêng). Peer đặt right_eye_outer lên đốm sáng cố định của đèn phát (1140,300) có ở mọi khung → cảnh báo trái/phải ở bản peer"
+D04.png,face13,right_eye_lower.outside,khác cờ,1,0,mine,4.6 / 4.4-2,"Giữ outside: mắt phải khuất sau sống mũi (mặt nghiêng). Peer đặt right_eye_outer lên đốm sáng cố định của đèn phát (1140,300) có ở mọi khung → cảnh báo trái/phải ở bản peer"
+D04.png,face13,mouth_left.occluded,khác cờ,0,1,mine,4.6,Giữ visible: khóe miệng trái thấy được trên viền môi nhìn nghiêng; peer cũng ghi môi trên/dưới visible
+D05.png,phone,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.7,"Giữ không vẽ phone: chỉ thấy dải tối thẳng có 2 đốm sáng giữa các ngón, không chắc là cạnh/góc máy (4.7, RUBRIC). Hỏi coach"
+D05.png,face13,nose_tip.occluded,khác cờ,1,0,peer,4.6,"Sửa nose_tip D05 thành visible (988,492): thấy đốm sáng ở chóp mũi, không bị tay che"
+D05.png,face13,mouth_left.occluded,khác cờ,1,0,ambiguous,4.6,"Giữ occluded: vùng miệng mờ, không thấy rõ viền môi; hai bên đặt miệng lệch ~40 px. Hỏi coach vị trí miệng"
+D05.png,face13,mouth_right.occluded,khác cờ,1,0,ambiguous,4.6,"Giữ occluded: vùng miệng mờ, không thấy rõ viền môi; hai bên đặt miệng lệch ~40 px. Hỏi coach vị trí miệng"
+D05.png,face13,lip_upper.occluded,khác cờ,1,0,ambiguous,4.6,"Giữ occluded: vùng miệng mờ, không thấy rõ viền môi; hai bên đặt miệng lệch ~40 px. Hỏi coach vị trí miệng"
+D05.png,face13,lip_lower.occluded,khác cờ,1,0,ambiguous,4.6,"Giữ occluded: vùng miệng mờ, không thấy rõ viền môi; hai bên đặt miệng lệch ~40 px. Hỏi coach vị trí miệng"
+D06.png,hand,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.26,,peer,4.4-5,"Sửa box tay trái thành [440,250,708,600] (box cũ lệch trái, thiếu nửa bàn tay cháy sáng); tay phải nới lên y=50 để gồm đầu ngón"
+D06.png,face,eye_left,khác giá trị (IoU=0.77),unknown,closed,mine,4.4-1 / 4.5,"Giữ unknown: mắt trái tối, không thấy rõ hai mí khép (closed cần thấy rõ mí khép); không suy từ mắt phải"
+D06.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,peer,4.4-5,"Sửa box tay trái thành [440,250,708,600] (box cũ lệch trái, thiếu nửa bàn tay cháy sáng); tay phải nới lên y=50 để gồm đầu ngón"
+D06.png,face13,left_eye_outer.occluded,khác cờ,1,0,mine,4.6,Giữ occluded cho mắt trái: vị trí ước lượng được nhưng không thấy rõ mí (khớp eye_left=unknown)
+D06.png,face13,left_eye_inner.occluded,khác cờ,1,0,mine,4.6,Giữ occluded cho mắt trái: vị trí ước lượng được nhưng không thấy rõ mí (khớp eye_left=unknown)
+D06.png,face13,left_eye_upper.occluded,khác cờ,1,0,mine,4.6,Giữ occluded cho mắt trái: vị trí ước lượng được nhưng không thấy rõ mí (khớp eye_left=unknown)
+D06.png,face13,left_eye_lower.occluded,khác cờ,1,0,mine,4.6,Giữ occluded cho mắt trái: vị trí ước lượng được nhưng không thấy rõ mí (khớp eye_left=unknown)
+D06.png,face13,right_eye_outer.occluded,khác cờ,0,1,mine,4.6,Giữ visible: khóe ngoài mắt phải nằm trên đường mí khép thấy được
+D06.png,face13,nose_tip.occluded,khác cờ,1,0,mine,4.6,"Giữ vị trí (995,470) occluded: mũi phải nằm giữa hai mắt theo trục y; điểm peer (985,405) nằm ngang mắt phải"
+S04_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.5,"Giữ không vẽ face: tóc che gần hết, chỉ thấy má/cằm, mắt và mũi không rõ (4.5 ""bị che gần hết""). Peer thấy 1 mắt + mũi. Hỏi coach"
+S04_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.5,"Giữ không vẽ face: tóc che gần hết, chỉ thấy má/cằm, mắt và mũi không rõ (4.5 ""bị che gần hết""). Peer thấy 1 mắt + mũi. Hỏi coach"
